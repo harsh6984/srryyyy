@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Aditi</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin:0;
+        text-align:center;
+    }
+
+    .card{
+        background:white;
+        padding:40px;
+        border-radius:15px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        max-width:400px;
+    }
+
+    h1{
+        color:#ff4d6d;
+    }
+
+    p{
+        font-size:18px;
+        color:#333;
+    }
+
+    button{
+        margin-top:20px;
+        padding:10px 20px;
+        border:none;
+        background:#ff4d6d;
+        color:white;
+        font-size:16px;
+        border-radius:8px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#e63956;
+    }
+
+    #message{
+        display:none;
+        margin-top:20px;
+        font-weight:bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>I'm Sorry Aditi 💔</h1>
+    <p>Click the button to see my message.</p>
+
+    <button onclick="showMessage()">Open Message</button>
+
+    <p id="message">
+         Aditi Gupta zii,<br><br>
+        I am really sorry (btw mere koi mistake ni).  
+        aur tumbhi kya yadd rkhoge aaj hum pehle srry bole bina kese galti ke <br><br>
+       
+    </p>
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
